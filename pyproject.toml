@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Mopidy-RadioPit"
-version = "1.0.2"
-description = "Mopidy extension for Radiopit (radiopit.drulle.lv)"
+version = "1.0.4"
+description = "Mopidy extension for RadioPit (radiopit.drulle.lv)"
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "Apache-2.0" }
