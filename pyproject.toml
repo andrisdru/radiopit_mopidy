@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Mopidy-Radiopit"
+version = "1.0.0"
+description = "Mopidy extension for Radiopit (radiopit.drulle.lv)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+keywords = ["mopidy", "radiopit", "radio", "streaming"]
+dependencies = [
+    "Mopidy>=3.0",
+    "Pykka>=2.0",
+    "requests>=2.0",
+]
+
+[project.entry-points."mopidy.ext"]
+radiopit = "mopidy_radiopit:Extension"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mopidy_radiopit*"]
+
+[tool.setuptools.package-data]
+mopidy_radiopit = ["ext.conf"]
