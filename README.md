@@ -38,7 +38,7 @@ Get your API key from the RadioPit web or Android app (Settings → API Key).
 In Iris (or any Mopidy browse client):
 
 1. Open **Browse**
-2. Click **Radiopit**
+2. Click **RadioPit**
 3. Your playlists appear as folders
 4. Click a folder to see stations — click a station to play
 
