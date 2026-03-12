@@ -21,7 +21,7 @@ def station_uri(station_id):
 
 
 class RadiopitLibraryProvider(backend.LibraryProvider):
-    root_directory = Ref.directory(uri=ROOT_URI, name="Radiopit")
+    root_directory = Ref.directory(uri=ROOT_URI, name="RadioPit")
 
     def __init__(self, backend):
         super().__init__(backend)
@@ -108,6 +108,6 @@ def _station_to_track(station):
         uri=station_uri(station["_id"]),
         name=name,
         artists=[Artist(name=name)],
-        album=Album(name="Radiopit"),
+        album=Album(name="RadioPit"),
         length=None,
     )

@@ -3,7 +3,7 @@
 [![PyPI version](https://badge.fury.io/py/Mopidy-RadioPit.svg)](https://pypi.org/project/Mopidy-RadioPit/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Mopidy extension that exposes your [Radiopit](https://radiopit.drulle.lv) playlists and stations for browsing and playback. Works with Iris and other Mopidy web clients.
+Mopidy extension that exposes your [RadioPit](https://radiopit.drulle.lv) playlists and stations for browsing and playback. Works with Iris and other Mopidy web clients.
 
 ## Installation
 
@@ -31,7 +31,7 @@ api_key = YOUR_API_KEY_HERE
 api_url = https://radiopit-api.drulle.lv
 ```
 
-Get your API key from the Radiopit web or Android app (Settings → API Key).
+Get your API key from the RadioPit web or Android app (Settings → API Key).
 
 ## Usage
 
