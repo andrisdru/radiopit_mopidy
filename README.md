@@ -1,4 +1,4 @@
-# Mopidy-Radiopit
+# Mopidy-RadioPit
 
 [![PyPI version](https://badge.fury.io/py/Mopidy-RadioPit.svg)](https://pypi.org/project/Mopidy-RadioPit/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -48,7 +48,7 @@ In Iris (or any Mopidy browse client):
 mopidy_radiopit/
 ├── __init__.py   # Extension entry point
 ├── actor.py      # Backend + playback provider
-├── client.py     # HTTP client for Radiopit API
+├── client.py     # HTTP client for RadioPit API
 ├── library.py    # Browse/lookup library provider
 └── ext.conf      # Default config values
 ```
