@@ -1,6 +1,6 @@
 # Mopidy-Radiopit
 
-[![PyPI version](https://badge.fury.io/py/Mopidy-Radiopit.svg)](https://pypi.org/project/Mopidy-Radiopit/)
+[![PyPI version](https://badge.fury.io/py/Mopidy-RadioPit.svg)](https://pypi.org/project/Mopidy-RadioPit/)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Mopidy extension that exposes your [Radiopit](https://radiopit.drulle.lv) playlists and stations for browsing and playback. Works with Iris and other Mopidy web clients.
