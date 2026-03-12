@@ -5,7 +5,7 @@ import requests
 logger = logging.getLogger(__name__)
 
 
-class RadiopitClient:
+class RadioPitClient:
     def __init__(self, api_url, api_key):
         self._api_url = api_url.rstrip("/")
         self._session = requests.Session()

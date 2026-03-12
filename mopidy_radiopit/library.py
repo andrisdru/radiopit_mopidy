@@ -20,7 +20,7 @@ def station_uri(station_id):
     return f"{STATION_URI_PREFIX}{station_id}"
 
 
-class RadiopitLibraryProvider(backend.LibraryProvider):
+class RadioPitLibraryProvider(backend.LibraryProvider):
     root_directory = Ref.directory(uri=ROOT_URI, name="RadioPit")
 
     def __init__(self, backend):

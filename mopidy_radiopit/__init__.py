@@ -2,11 +2,11 @@ import pathlib
 
 from mopidy import config, ext
 
-__version__ = "1.0.0"
+__version__ = "1.0.9"
 
 
 class Extension(ext.Extension):
-    dist_name = "Mopidy-Radiopit"
+    dist_name = "Mopidy-RadioPit"
     ext_name = "radiopit"
     version = __version__
 
@@ -20,6 +20,6 @@ class Extension(ext.Extension):
         return schema
 
     def setup(self, registry):
-        from .actor import RadiopitBackend
+        from .actor import RadioPitBackend
 
-        registry.add("backend", RadiopitBackend)
+        registry.add("backend", RadioPitBackend)

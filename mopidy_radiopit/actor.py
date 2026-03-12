@@ -3,33 +3,33 @@ import logging
 import pykka
 from mopidy import backend
 
-from .client import RadiopitClient
-from .library import RadiopitLibraryProvider, STATION_URI_PREFIX
+from .client import RadioPitClient
+from .library import RadioPitLibraryProvider, STATION_URI_PREFIX
 
 logger = logging.getLogger(__name__)
 
 
-class RadiopitBackend(pykka.ThreadingActor, backend.Backend):
+class RadioPitBackend(pykka.ThreadingActor, backend.Backend):
     uri_schemes = ["radiopit"]
 
     def __init__(self, config, audio):
         super().__init__()
         cfg = config["radiopit"]
-        self._client = RadiopitClient(
+        self._client = RadioPitClient(
             api_url=cfg["api_url"],
             api_key=cfg["api_key"],
         )
-        self.library = RadiopitLibraryProvider(backend=self)
-        self.playback = RadiopitPlaybackProvider(audio=audio, backend=self)
+        self.library = RadioPitLibraryProvider(backend=self)
+        self.playback = RadioPitPlaybackProvider(audio=audio, backend=self)
 
     def on_start(self):
-        logger.info("Radiopit backend started")
+        logger.info("RadioPit backend started")
 
     def on_stop(self):
-        logger.info("Radiopit backend stopped")
+        logger.info("RadioPit backend stopped")
 
 
-class RadiopitPlaybackProvider(backend.PlaybackProvider):
+class RadioPitPlaybackProvider(backend.PlaybackProvider):
     def translate_uri(self, uri):
         if not uri.startswith(STATION_URI_PREFIX):
             return None
