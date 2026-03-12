@@ -10,7 +10,7 @@ Mopidy extension that exposes your [Radiopit](https://radiopit.drulle.lv) playli
 Install from PyPI:
 
 ```bash
-pip install Mopidy-Radiopit
+pip install Mopidy-RadioPit
 ```
 
 ## Requirements
