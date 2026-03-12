@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Mopidy-Radiopit"
+name = "Mopidy-RadioPit"
 version = "1.0.0"
 description = "Mopidy extension for Radiopit (radiopit.drulle.lv)"
 readme = "README.md"
